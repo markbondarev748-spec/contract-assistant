@@ -1,0 +1,208 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//contract-assistant//RU
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Сроки по контракту 0120200003326000021
+BEGIN:VEVENT
+UID:ca-6b2f0897cf309f18@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261120
+DTEND;VALUE=DATE:20261121
+SUMMARY:Этап 1: оказать услуги — крайний сро
+ к
+DESCRIPTION:Функциональные возможности п. 1–2
+  Приложения №2 к ТЗ на предпродуктивном
+  и продуктивном стендах\, настройка\, ин
+ структаж персонала МО
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 1: оказать услуги — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-dde0bb8de16743cf@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Этап 1: сдача и оплата — крайний сро
+ к
+DESCRIPTION:Функциональные возможности п. 1–2
+  Приложения №2 к ТЗ на предпродуктивном
+  и продуктивном стендах\, настройка\, ин
+ структаж персонала МО
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 1: сдача и оплата — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-9f299b5019a6d753@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:Этап 2: оказать услуги — крайний сро
+ к
+DESCRIPTION:Функциональные возможности п. 3–7
+  Приложения №2 к ТЗ на предпродуктивном
+  и продуктивном стендах\, настройка\, ин
+ структаж персонала МО
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 2: оказать услуги — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-1d5ca34686b41869@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:Этап 2: сдача и оплата — крайний сро
+ к
+DESCRIPTION:Функциональные возможности п. 3–7
+  Приложения №2 к ТЗ на предпродуктивном
+  и продуктивном стендах\, настройка\, ин
+ структаж персонала МО
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 2: сдача и оплата — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-a4246b7a34e74b19@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261127
+DTEND;VALUE=DATE:20261128
+SUMMARY:Этап 3: оказать услуги — крайний сро
+ к
+DESCRIPTION:Передача права использования на 
+ ПО по п. 1–2 Приложения №2 к ТЗ (КТРУ 58.29.11
+ .000-00000003)
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 3: оказать услуги — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-93a2a4a8d5711732@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261222
+DTEND;VALUE=DATE:20261223
+SUMMARY:Этап 3: сдача и оплата — крайний сро
+ к
+DESCRIPTION:Передача права использования на 
+ ПО по п. 1–2 Приложения №2 к ТЗ (КТРУ 58.29.11
+ .000-00000003)
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 3: сдача и оплата — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-d7f6df1facc42ffd@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261214
+DTEND;VALUE=DATE:20261215
+SUMMARY:Этап 4: оказать услуги — крайний сро
+ к
+DESCRIPTION:Передача права использования на 
+ ПО по п. 3–7 Приложения №2 к ТЗ (КТРУ 58.29.11
+ .000-00000003)
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 4: оказать услуги — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-63f8df0872aebdf3@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Этап 4: сдача и оплата — крайний сро
+ к
+DESCRIPTION:Передача права использования на 
+ ПО по п. 3–7 Приложения №2 к ТЗ (КТРУ 58.29.11
+ .000-00000003)
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Этап 4: сдача и оплата — крайний с
+ рок
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-c8466db7ac5e80a1@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261106
+DTEND;VALUE=DATE:20261107
+SUMMARY:Э-02.1 — Уведомить Заказчика о готовн
+ ости к приемочным испытаниям\, пр
+DESCRIPTION:Уведомить Заказчика о готовности
+  к приемочным испытаниям\, приложить Пр
+ ограмму и методику приемочных испытани
+ й (Заказчик согласует ПМИ и дату за 5 раб
+ очих дней) (Этап 1)\nОснование: ТЗ п. 4.2.4.1\n
+ Канал: официальное письмо + email
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Э-02.1 — Уведомить Заказчика о гото
+ вности к приемочным испытаниям\, пр
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-c88914aef382e887@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261113
+DTEND;VALUE=DATE:20261114
+SUMMARY:П-05 — Направить на ib@pkmiac.ru Заявку на 
+ подключение к ГИС СЗ ПК\,
+DESCRIPTION:Направить на ib@pkmiac.ru Заявку на под
+ ключение к ГИС СЗ ПК\, Акт классификации
+  ИС\, Технический паспорт на ИС\, Заключе
+ ние по результатам соответствия требов
+ аниям по защите информации (или Акт оце
+ нки эффективности мер защиты)\nОсновани
+ е: ТЗ п. 4.2.1\nКанал: электронная почта
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:П-05 — Направить на ib@pkmiac.ru Заявку 
+ на подключение к ГИС СЗ ПК\,
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:ca-9028e9a5955daa02@contract-assistant
+DTSTAMP:20260905T153253Z
+DTSTART;VALUE=DATE:20261123
+DTEND;VALUE=DATE:20261124
+SUMMARY:Э-02.2 — Уведомить Заказчика о готовн
+ ости к приемочным испытаниям\, пр
+DESCRIPTION:Уведомить Заказчика о готовности
+  к приемочным испытаниям\, приложить Пр
+ ограмму и методику приемочных испытани
+ й (Заказчик согласует ПМИ и дату за 5 раб
+ очих дней) (Этап 2)\nОснование: ТЗ п. 4.2.4.1\n
+ Канал: официальное письмо + email
+BEGIN:VALARM
+TRIGGER:-P1D
+ACTION:DISPLAY
+DESCRIPTION:Э-02.2 — Уведомить Заказчика о гото
+ вности к приемочным испытаниям\, пр
+END:VALARM
+END:VEVENT
+END:VCALENDAR
