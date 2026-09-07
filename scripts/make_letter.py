@@ -67,7 +67,11 @@ def esc(s):
 
 def replace_xml(xml, pairs):
     """Заменяет пары (что, на что) в тексте документа.
-    Учитывает, что Word рвёт текст на куски и фраза может быть разделена между ними."""
+
+    Word рвёт текст абзаца на куски, и фраза может быть разделена между ними. Поэтому:
+    целые куски правим по одному (форматирование внутри абзаца сохраняется), а если
+    хоть одна фраза разорвана — склеиваем абзац целиком и применяем замены к нему,
+    иначе короткая фраза успевает сработать раньше длинной и портит замену."""
     def sub_text(t):
         for a, b in pairs:
             t = t.replace(a, b)
@@ -76,13 +80,11 @@ def replace_xml(xml, pairs):
     out, pos = [], 0
     for m in re.finditer(r'<w:p[ >].*?</w:p>', xml, re.S):
         para = m.group(0)
-        # 1) простой случай: фраза целиком внутри одного <w:t>
-        para = re.sub(r'(<w:t[^>]*>)(.*?)(</w:t>)',
-                      lambda x: x.group(1) + sub_text(x.group(2)) + x.group(3), para, flags=re.S)
-        # 2) фраза разорвана между кусками — склеиваем весь абзац в первый кусок
         chunks = re.findall(r'<w:t[^>]*>(.*?)</w:t>', para, re.S)
         joined = ''.join(chunks)
-        if any(a in joined for a, _ in pairs):
+        разорванные = [a for a, _ in pairs
+                       if a in joined and not any(a in c for c in chunks)]
+        if разорванные:
             filled = sub_text(joined)
             first = [True]
 
@@ -92,6 +94,10 @@ def replace_xml(xml, pairs):
                     return x.group(1) + filled + x.group(3)
                 return x.group(1) + x.group(3)
             para = re.sub(r'(<w:t[^>]*>)(.*?)(</w:t>)', repl, para, flags=re.S)
+        elif any(a in joined for a, _ in pairs):
+            para = re.sub(r'(<w:t[^>]*>)(.*?)(</w:t>)',
+                          lambda x: x.group(1) + sub_text(x.group(2)) + x.group(3),
+                          para, flags=re.S)
         out.append(xml[pos:m.start()])
         out.append(para)
         pos = m.end()

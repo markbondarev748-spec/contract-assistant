@@ -1,0 +1,31 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-settings.json",
+  "permissions": {
+    "allow": [
+      "Bash(python3 scripts/check.py *)",
+      "Bash(python3 scripts/make_plan.py *)",
+      "Bash(python3 scripts/make_letter.py *)",
+      "Bash(python3 scripts/start_pack.py *)",
+      "Bash(python3 scripts/registry.py *)",
+      "Bash(python3 scripts/read_doc.py *)",
+      "Bash(python3 scripts/workdays.py *)",
+      "Bash(python3 scripts/update_calendar.py *)",
+      "Bash(python3 scripts/mark_template.py *)",
+      "Edit(3_Правила_и_регламенты/**)",
+      "Edit(4_План_и_журнал/**)",
+      "Edit(5_Готовые_письма/**)"
+    ],
+    "ask": [
+      "Bash(git push *)",
+      "Bash(git commit *)"
+    ],
+    "deny": [
+      "Bash(rm *)",
+      "Bash(sudo *)",
+      "Bash(curl *)",
+      "Edit(1_Документы_контракта/**)",
+      "Edit(2_Шаблоны_писем/**)",
+      "Edit(scripts/**)"
+    ]
+  }
+}
